@@ -16,6 +16,9 @@ let mapleader = ","
 " Wrapping
 set wrap
 
+" Colorscheme
+colorscheme solarized
+
 " Highlight the line the cursor is on
 set cursorline
 
