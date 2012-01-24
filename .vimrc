@@ -5,7 +5,15 @@ set nocompatible
 " Load bundles
 call pathogen#infect()
 
-syntax on
+syntax enable
+
+" Colorscheme
+if has('gui_running')
+  set background=light
+else
+  set background-dark
+endif
+colorscheme solarized
 
 " Load plugins for filetypes
 filetype plugin indent on
@@ -15,9 +23,6 @@ let mapleader = ","
 
 " Wrapping
 set wrap
-
-" Colorscheme
-colorscheme solarized
 
 " Highlight the line the cursor is on
 set cursorline
